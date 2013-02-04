@@ -104,50 +104,7 @@ package nl.imotion.blinkpresentation
             new StageController( stage );
 
             new PresentationModel();
-
-//            var video:VideoContent = new VideoContent("slides/lion_timelapse/lion_timelapse.f4v")
-//            stage.addChild( video );
-
-//            showSlideshow();
         }
-
-
-/*        private var _loader:LoaderMax;
-        private var _loader2:ImageLoader;
-        private var _loader3:ImageLoader;
-        private var _gallery:SlideShow;
-
-
-        private function showSlideshow():void
-        {
-            _loader = new LoaderMax( { onComplete: complete } );
-            _loader.append( new ImageLoader( "slides/evo_win/treehill_evo.png" ) );
-            _loader.append( new ImageLoader( "slides/evo_win/charlize_evo.png" ) );
-            _loader.append( new ImageLoader( "slides/evo_win/lion_evo.png" ) );
-            _loader.load();
-        }
-
-
-        private function complete( e:LoaderEvent ):void
-        {
-            _gallery = new SlideShow( stage.stageWidth, stage.stageHeight, new FlipSwitcher( 2 ) );
-            _gallery.loop = true;
-            this.addChild(_gallery);
-
-            var loaders:Array = _loader.getChildren();
-
-            for each ( var l:ImageLoader in loaders )
-            {
-                _gallery.addImage( Bitmap( l.rawContent ).bitmapData );
-            }
-            _gallery.start(1);
-            _gallery.addEventListener(MouseEvent.CLICK, clickHandler);
-        }
-
-        private function clickHandler( e:MouseEvent ):void
-        {
-            _gallery.next();
-        }*/
 
         // ____________________________________________________________________________________________________
         // PROTECTED
