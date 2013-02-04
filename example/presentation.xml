@@ -109,7 +109,7 @@
                       ~ Possible values for hvlign:
                       ~ 'top', 'middle' and 'bottom'
                       -->
-                    <swf src="end_bzzz.swf" hAlign="left" vAlign="top" scaleMode="none" />
+                    <swf src="end_bzzz.swf" hAlign="left" vAlign="top" scaleMode="stretch" />
                 </content>
             </slide>
 
