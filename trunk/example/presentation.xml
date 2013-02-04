@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<root>
+    <!--
+      ~ Set up the correct sizes for the display you plan to show your presentation on.
+      ~
+      ~ When the useRemote attribute is set to true, the presentation will attempt to set up a P2P connection
+      ~ with any Android device on the same network that is runnning the Blink Android app.
+      ~
+      ~ Possible values for layout are 'grid', 'horizontal' and 'vertical'.
+      ~
+      ~ If you want to have thumbnails in zoomed out view, simply add a thumb.jpg image to any slide folder.
+      ~ If no thumb is set, the application will create one automatically after showing the slide.
+      ~ The thumbWidth and thumbHeight properties define at what resolution the thumbs will be created.
+      ~ Larger width/height means more memory usage.
+      -->
+    <presentation width="800" height="600" thumbWidth="320" thumbHeight="240" fullScreen="false" useRemote="false" layout="horizontal">
+        <title><![CDATA[Blink Presentation example]]></title>
+        <slides>
+
+            <slide id="cover" bgColor="0x000000">
+                <content>
+                    <swf src="cover.swf" />
+                </content>
+                <!--
+                  ~ Use the notes node if you are using the Android app and want to show notes on it.
+                  -->
+                <notes>
+                    <![CDATA[
+                    Notes will be shown in the Android app.
+                ]]></notes>
+            </slide>
+
+            <slide id="navigation" bgColor="0x000000">
+                <content>
+                    <swf src="navigation.swf" />
+                </content>
+                <!--
+                  ~ You can optionally define a title and subtitle
+                  -->
+                <title color="0x999999">Blink presentation</title>
+                <subTitle color="0x666666">Navigation</subTitle>
+            </slide>
+
+            <slide id="slideshow_crossfade" bgColor="0xb2b5a1">
+                <content>
+                    <!--
+                     ~ This is an example of a slideshow.
+                     ~ If you want to just show a single image, you can use the image tag separately,
+                     ~ instead of wrapping it in a slideshow tag.
+                     -->
+                    <slideShow imageSwitcher="crossfade">
+                        <image src="pic1.jpg" />
+                        <image src="pic3.jpg" />
+                        <image src="pic2.jpg" />
+                    </slideShow>
+                </content>
+                <title color="0x333333">Slideshow</title>
+                <subTitle color="0x000000">Crossfade transitions</subTitle>
+            </slide>
+
+            <slide id="slideshow_blur" bgColor="0x000000">
+                <content>
+					<slideShow imageSwitcher="blur">
+                        <image src="pic1.jpg" />
+                        <image src="pic2.jpg" />
+                        <image src="pic3.jpg" />
+                    </slideShow>
+                </content>
+                <title color="0xffffff">Slideshow</title>
+                <subTitle color="0xdddddd">Blur transitions</subTitle>
+            </slide>
+
+            <slide id="slideshow_flip" bgColor="0x000000">
+                <content>
+                    <slideShow imageSwitcher="flip">
+                        <image src="pic1.jpg" />
+                        <image src="pic2.jpg" />
+                        <image src="pic3.jpg" />
+                    </slideShow>
+                </content>
+                <title color="0xffffff">Slideshow</title>
+                <subTitle color="0xdddddd">Flip transitions</subTitle>
+            </slide>
+
+            <!--
+              ~ use delayReveal when you do not want the slide to start playing before the transition to it is
+              ~ completely finished.
+              ~ Mouse over the video to show the control bar, so you can scrub the video.
+              -->
+            <slide id="blinkremote" bgColor="0x000000" delayedReveal="true">
+                <content>
+                    <!--
+                      ~ Possible values for scaleMode:
+                      ~ 'none', 'proportionalInside' and 'stretch'
+                      ~
+                      ~ Use autoPlay to control whether the video starts playing automatically
+                      -->
+                    <video src="air_blink.f4v" scaleMode="proportionalInside" autoPlay="true" />
+                </content>
+                <title color="0xffffff">Android Blink remote</title>
+                <subTitle color="0xdddddd">Control your presentation and show notes</subTitle>
+            </slide>
+
+            <slide id="end_bzzz" bgColor="0x000000" delayedReveal="true">
+                <content>
+                    <!--
+                      ~ Possible values for hAlign:
+                      ~ 'left', 'center' and 'right'
+                      ~ Possible values for hvlign:
+                      ~ 'top', 'middle' and 'bottom'
+                      -->
+                    <swf src="end_bzzz.swf" hAlign="left" vAlign="top" scaleMode="none" />
+                </content>
+            </slide>
+
+        </slides>
+    </presentation>
+</root>
