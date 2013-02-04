@@ -37,8 +37,6 @@ package nl.imotion.blinkpresentation.remote
     import flash.ui.Keyboard;
 
     import nl.imotion.blinkpresentation.definitions.RemoteMessageType;
-    import nl.imotion.burst.components.stackpanel.StackPanel;
-    import nl.imotion.burst.components.stackpanel.StackPanelOrientation;
 
     import nl.imotion.p2p.P2PConnector;
     import nl.imotion.p2p.P2PConnectorEvent;

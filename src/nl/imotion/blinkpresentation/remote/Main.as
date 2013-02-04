@@ -29,26 +29,13 @@ package nl.imotion.blinkpresentation.remote
     import flash.desktop.NativeApplication;
     import flash.desktop.SystemIdleMode;
 
-    import nl.imotion.blinkpresentation.*;
-    import com.greensock.events.LoaderEvent;
-    import com.greensock.loading.ImageLoader;
-    import com.greensock.loading.LoaderMax;
-
-    import flash.display.Bitmap;
-
     import flash.display.Sprite;
     import flash.display.StageAlign;
     import flash.display.StageScaleMode;
     import flash.events.Event;
     import flash.text.Font;
 
-    import nl.imotion.bindmvc.core.BindMVCCore;
-    import nl.imotion.blinkpresentation.config.Config;
     import nl.imotion.util.StageRef;
-    import nl.imotion.blinkpresentation.view.slideshow.SlideShow;
-    import nl.imotion.blinkpresentation.view.slideshow.imageswitcher.BlurSwitcher;
-    import nl.imotion.blinkpresentation.view.slideshow.imageswitcher.CrossFadeSwitcher;
-    import nl.imotion.blinkpresentation.view.slideshow.imageswitcher.FlipSwitcher;
 
 
     /**
