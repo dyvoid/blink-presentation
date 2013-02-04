@@ -60,7 +60,7 @@ package nl.imotion.blinkpresentation
      * @author Pieter van de Sluis
      */
 
-    [SWF(backgroundColor="#ffffff",width="1024",height="768",frameRate="30")]
+    [SWF(backgroundColor="#ffffff",width="800",height="600",frameRate="30")]
     public class Main extends Sprite
     {
         // ____________________________________________________________________________________________________
